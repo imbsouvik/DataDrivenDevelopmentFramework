@@ -47,7 +47,10 @@ public class ContactsPageTest extends TestBase{
 		System.out.println(title);
 	}
 	
-	@Test(enabled=false)
+	
+	// @Test(retryAnalyzer = com.crm.qa.analyzer.RetryAnalyzer.class) //
+	
+	@Test(retryAnalyzer = com.crm.qa.analyzer.RetryAnalyzer.class)
 	public void selectCheckBoxByTest(){
 		contactsPage.selectCheckBoxBy("abhilasha Sharma");
 	}
@@ -59,7 +62,7 @@ public class ContactsPageTest extends TestBase{
 		return data;
 	}
 	
-	@Test(dataProvider = "contactPageTestData")
+	@Test(dataProvider = "contactPageTestData", enabled=false)
 	public void newContactsInformationTest(String Prefix, String FirstName, String LastName, String Company){
 		
 		homePage.newContactsLinkClick();

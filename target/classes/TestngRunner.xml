@@ -3,16 +3,16 @@
 <suite name="Suite">
     
     <listeners>
-        <listener class-name="com.crm.qa.ExtentReportListeners.ExtentReporterNG" />
+        <listener class-name="com.crm.qa.analyzer.MyTransformer" />
     </listeners>
     
   <test name="Free CRM Test">
       
     <classes>
         
-      <class name="com.crm.qa.testcases.LoginPageTest"/>
+  
       <class name="com.crm.qa.testcases.ContactsPageTest"/>
-      <class name="com.crm.qa.testcases.HomePageTest"/>
+      
       
     </classes>
   </test> <!-- Test -->
